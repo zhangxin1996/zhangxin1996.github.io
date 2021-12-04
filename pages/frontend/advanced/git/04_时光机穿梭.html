@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>查看仓库状态和修改的文件 | 欣-技术笔记</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    
+    <meta name="description" content="用于记录所学知识">
+    
+    <link rel="preload" href="/assets/css/0.styles.b4933ffa.css" as="style"><link rel="preload" href="/assets/js/app.2b276f17.js" as="script"><link rel="preload" href="/assets/js/6.4619fce8.js" as="script"><link rel="preload" href="/assets/js/2.ea162f4d.js" as="script"><link rel="preload" href="/assets/js/23.091504bc.js" as="script"><link rel="prefetch" href="/assets/js/10.deaf5fff.js"><link rel="prefetch" href="/assets/js/11.c07d4c79.js"><link rel="prefetch" href="/assets/js/12.e9b05fc5.js"><link rel="prefetch" href="/assets/js/13.38505a82.js"><link rel="prefetch" href="/assets/js/14.289b3a5c.js"><link rel="prefetch" href="/assets/js/15.e792572f.js"><link rel="prefetch" href="/assets/js/16.b054e12f.js"><link rel="prefetch" href="/assets/js/17.620dbdb9.js"><link rel="prefetch" href="/assets/js/18.2481fca2.js"><link rel="prefetch" href="/assets/js/19.112e71a6.js"><link rel="prefetch" href="/assets/js/20.ab74850c.js"><link rel="prefetch" href="/assets/js/21.f9bbe3cf.js"><link rel="prefetch" href="/assets/js/22.5485580e.js"><link rel="prefetch" href="/assets/js/24.b0342d78.js"><link rel="prefetch" href="/assets/js/25.39de772b.js"><link rel="prefetch" href="/assets/js/26.00df7261.js"><link rel="prefetch" href="/assets/js/27.bbbd8dd2.js"><link rel="prefetch" href="/assets/js/28.c040e6a7.js"><link rel="prefetch" href="/assets/js/29.53e4225b.js"><link rel="prefetch" href="/assets/js/3.70aa92ba.js"><link rel="prefetch" href="/assets/js/30.fabe1845.js"><link rel="prefetch" href="/assets/js/31.9ca9ad9a.js"><link rel="prefetch" href="/assets/js/32.710b4971.js"><link rel="prefetch" href="/assets/js/33.5ca343df.js"><link rel="prefetch" href="/assets/js/34.c9b1153e.js"><link rel="prefetch" href="/assets/js/35.422344af.js"><link rel="prefetch" href="/assets/js/36.5095878b.js"><link rel="prefetch" href="/assets/js/37.93a613e7.js"><link rel="prefetch" href="/assets/js/38.0b75e46f.js"><link rel="prefetch" href="/assets/js/39.a7cd6dd2.js"><link rel="prefetch" href="/assets/js/4.8453ad77.js"><link rel="prefetch" href="/assets/js/40.136df7b8.js"><link rel="prefetch" href="/assets/js/41.d8498bf2.js"><link rel="prefetch" href="/assets/js/42.a07f8f0c.js"><link rel="prefetch" href="/assets/js/43.5dcdac04.js"><link rel="prefetch" href="/assets/js/44.e419af20.js"><link rel="prefetch" href="/assets/js/45.45e667f5.js"><link rel="prefetch" href="/assets/js/46.686f6180.js"><link rel="prefetch" href="/assets/js/47.fa687447.js"><link rel="prefetch" href="/assets/js/48.c5319695.js"><link rel="prefetch" href="/assets/js/49.9643f458.js"><link rel="prefetch" href="/assets/js/5.08ad096a.js"><link rel="prefetch" href="/assets/js/50.bdc2004a.js"><link rel="prefetch" href="/assets/js/51.a0e01b62.js"><link rel="prefetch" href="/assets/js/52.85028a9f.js"><link rel="prefetch" href="/assets/js/53.ff974719.js"><link rel="prefetch" href="/assets/js/54.a987a001.js"><link rel="prefetch" href="/assets/js/55.26501f71.js"><link rel="prefetch" href="/assets/js/56.66979d08.js"><link rel="prefetch" href="/assets/js/57.58fa5900.js"><link rel="prefetch" href="/assets/js/58.1054672b.js"><link rel="prefetch" href="/assets/js/59.4758f0eb.js"><link rel="prefetch" href="/assets/js/60.5622108c.js"><link rel="prefetch" href="/assets/js/7.acbb4317.js"><link rel="prefetch" href="/assets/js/8.a09a5268.js"><link rel="prefetch" href="/assets/js/9.606ac6a5.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.b4933ffa.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">欣-技术笔记</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端的基础内容" class="dropdown-title"><span class="title">前端基础</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端的基础内容" class="mobile-dropdown-title"><span class="title">前端基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/frontend/basis/html/" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/pages/frontend/basis/css/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/pages/frontend/basis/javascript/" class="nav-link">
+  JavaScript
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端的进阶内容" class="dropdown-title"><span class="title">前端进阶</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端的进阶内容" class="mobile-dropdown-title"><span class="title">前端进阶</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/frontend/advanced/es6/" class="nav-link">
+  ES6
+</a></li><li class="dropdown-item"><!----> <a href="/pages/frontend/advanced/git/" class="nav-link router-link-active">
+  Git
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端的框架内容" class="dropdown-title"><span class="title">前端框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端的框架内容" class="mobile-dropdown-title"><span class="title">前端框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/frontend/frame/vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/pages/frontend/frame/vue3/" class="nav-link">
+  Vue3
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/zhangxin1996" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端的基础内容" class="dropdown-title"><span class="title">前端基础</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端的基础内容" class="mobile-dropdown-title"><span class="title">前端基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/frontend/basis/html/" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/pages/frontend/basis/css/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/pages/frontend/basis/javascript/" class="nav-link">
+  JavaScript
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端的进阶内容" class="dropdown-title"><span class="title">前端进阶</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端的进阶内容" class="mobile-dropdown-title"><span class="title">前端进阶</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/frontend/advanced/es6/" class="nav-link">
+  ES6
+</a></li><li class="dropdown-item"><!----> <a href="/pages/frontend/advanced/git/" class="nav-link router-link-active">
+  Git
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端的框架内容" class="dropdown-title"><span class="title">前端框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端的框架内容" class="mobile-dropdown-title"><span class="title">前端框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/frontend/frame/vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/pages/frontend/frame/vue3/" class="nav-link">
+  Vue3
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/zhangxin1996" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Git</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/frontend/advanced/git/" aria-current="page" class="sidebar-link">前言</a></li><li><a href="/pages/frontend/advanced/git/01_git概述.html" class="sidebar-link">Git概述</a></li><li><a href="/pages/frontend/advanced/git/02_git安装.html" class="sidebar-link">Git安装</a></li><li><a href="/pages/frontend/advanced/git/03_创建版本库.html" class="sidebar-link">创建版本库</a></li><li><a href="/pages/frontend/advanced/git/04_时光机穿梭.html" class="active sidebar-link">时光机穿梭</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/pages/frontend/advanced/git/04_时光机穿梭.html#查看仓库状态和修改的文件" class="sidebar-link">查看仓库状态和修改的文件</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/pages/frontend/advanced/git/04_时光机穿梭.html#小结" class="sidebar-link">小结</a></li></ul></li><li class="sidebar-sub-header"><a href="/pages/frontend/advanced/git/04_时光机穿梭.html#版本回退" class="sidebar-link">版本回退</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="查看仓库状态和修改的文件"><a href="#查看仓库状态和修改的文件" class="header-anchor">#</a> 查看仓库状态和修改的文件</h2> <p>我们已经成功地添加并提交了一个readme.txt，我们修改readme.txt文件，改成如下内容：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>Git is a distributed version control system.
+Git is free software.
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>现在，运行<code>git status</code></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>On branch master
+Changes not staged for commit:
+  (use &quot;git add &lt;file&gt;...&quot; to update what will be committed)
+  (use &quot;git checkout -- &lt;file&gt;...&quot; to discard changes in working directory)
+
+        modified:   readme.txt
+
+no changes added to commit (use &quot;git add&quot; and/or &quot;git commit -a&quot;)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p><code>git status</code>命令可以让我们时刻掌握仓库当前的状态，上面的命令告诉我们，<code>readme.txt</code>被修改过了，但还没有准备提交的修改。</p> <p>虽然Git告诉我们<code>readme.txt</code>被修改了，但如果能看看具体修改了什么内容，自然是很好地。比如你休假两天回来上班，已经记不清上次怎么修改的<code>readme.txt</code>，所以，需要使用<code>git diff</code>命令看看：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>$ git diff readme.txt
+diff --git a/readme.txt b/readme.txt
+index d8036c1..013b5bc 100644
+--- a/readme.txt
++++ b/readme.txt
+@@ -1,2 +1,2 @@
+-Git is a version control system.
++Git is a distributed version control system.
+ Git is free software.
+\ No newline at end of file
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><p><code>git diff</code>顾名思义就是查看difference，从上面的命令输入可以看到，我们在第一行添加了一个<code>distributed</code>单词。</p> <p>知道了对<code>readme.txt</code>做了什么修改后，就可以安心的将它提交到仓库。提交修改和提交新文件是一样的两步：</p> <p>第一步： <code>git add</code>：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>git add readme.txt
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>同样没有输出。在执行第二步<code>git commit</code>之前，我们再运行<code>git status</code>看看当前仓库的状态：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>$ git status
+On branch master
+Changes to be committed:
+  (use &quot;git reset HEAD &lt;file&gt;...&quot; to unstage)
+
+        modified:   readme.txt
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p><code>git status</code>告诉我们，将要被提交的修改包括<code>readme.txt</code>，下一步安心提交：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>$ git commit -m &quot;add distributed&quot;
+[master 4b7d27d] add distributed
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>提交之后，我们再使用<code>git status</code>命令查看仓库当前状态：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>$ git status
+On branch master
+nothing to commit, working tree clean
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>Git告诉我们当前没有需要提交的修改，而且，工作目录是干净（working tree clean）的。</p> <h3 id="小结"><a href="#小结" class="header-anchor">#</a> 小结</h3> <p><code>git status</code>命令，可以随时掌握工作区的状态。
+如果<code>git status</code>命令告诉你有文件被修改了，可以使用<code>git diff</code>命令，查看修改的内容。</p> <h2 id="版本回退"><a href="#版本回退" class="header-anchor">#</a> 版本回退</h2> <p>现在我们已经学会了修改文件，然后把修改的文件提交到Git版本库，现在我们再练习一次，修改<code>readme.txt</code>文件：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>Git is a distributed version control system.
+Git is free software distributed under the GPL.
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>然后尝试添加和提交，</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>$ git add readme.txt
+$ git commit -m &quot;append GPL&quot;
+[master fe70186] append GPL
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>像这样，你不断对文件进行修改，然后不断提交到版本库，就可以“保存一个快照”，这个快照在Git中被称为<code>commit</code>。一旦你把文件该乱或者误删了文件，还可以从最近的一个<code>commit</code>恢复，然后继续工作。</p> <p>我们对<code>readme.txt</code>文件一共有三个版本被提交到Git仓库了，当然在实际工作中，我们怎能记住一个几千行文件都修改了什么内容，不然要版本控制体统做什么。在Git中，我们使用<code>git log</code>命令查看历史记录：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>$ git log
+commit fe701861fec66b129f2b0307c23d0f9b6b45934f (HEAD -&gt; master)
+Author: zhangxin1996 &lt;mrzhangxin1996@163.com&gt;
+Date:   Fri May 7 21:56:08 2021 +0800
+
+    append GPL
+
+commit 4b7d27d61aff58674b0031a63df2a37024a7724f
+Author: zhangxin1996 &lt;mrzhangxin1996@163.com&gt;
+Date:   Fri May 7 20:28:26 2021 +0800
+
+    add distributed
+
+commit af798d23257bc999509ca9eeaff2fbfe4083be0d
+Author: zhangxin1996 &lt;mrzhangxin1996@163.com&gt;
+Date:   Wed May 5 11:04:22 2021 +0800
+
+    write a readme file
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新时间:</span> <span class="time">2021-07-23  22:13:21</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/pages/frontend/advanced/git/03_创建版本库.html" class="prev">
+        创建版本库
+      </a></span> <!----></p></div>  <!----></main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.2b276f17.js" defer></script><script src="/assets/js/6.4619fce8.js" defer></script><script src="/assets/js/2.ea162f4d.js" defer></script><script src="/assets/js/23.091504bc.js" defer></script>
+  </body>
+</html>
